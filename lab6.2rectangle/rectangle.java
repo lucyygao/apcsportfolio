@@ -2,8 +2,8 @@
 /**
  * Write a description of class rectangle here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Lucy Gao
+ * @version 9112019
  */
 import apcslib.*;
 public class rectangle
@@ -37,13 +37,13 @@ public class rectangle
     // calculates and returns the perimeter of the rectangle 
     public double getPerimeter()
     {
-        double perimeter = 0;
+        double perimeter = (2 * myWidth) + (2 * myHeight);
         return perimeter;
     }
     // Calculates and returns the are of the rectangle. 
     public double getArea()
     {
-        double area = 0;
+        double area = myWidth * myHeight;
         return area;
     }
     // Draws a new instance of a Rectangle object with the left and right 
@@ -51,5 +51,18 @@ public class rectangle
     // are at y and y + height.
     public void draw()
     {
+        int x = 0;
+        
+        pen.up();
+        pen.move(myX, myY);
+        pen.down();
+        
+        for (x = 0; x <= 1; x++)
+        {
+            pen.forward(myWidth);
+            pen.turnRight(90);
+            pen.forward(myHeight);
+            pen.turnRight(90);
+        }
     }
 }
