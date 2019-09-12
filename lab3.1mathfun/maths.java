@@ -2,15 +2,17 @@
 /**
  * Write a description of class maths here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Lucy Gao
+ * @version 91219
  */
 public class maths
 {
     public static void main()
     {
-        // solve the math problems
+        // label
         System.out.println("\u000C\nMATH PROBLEMS:");
+        
+        // solve each of the math problems
         int ans1 = 4 + 9;
         System.out.println("4 + 9 = " + ans1);
         
@@ -34,5 +36,24 @@ public class maths
         
         char ans8 = (char)105;
         System.out.println("(char)105 = " + ans8);
+        
+        // label
+        System.out.println("\nCONSTANTS");
+        
+        // print out constants
+        System.out.println("The largest value of type byte = " + Byte.MAX_VALUE);
+        System.out.println("The smallest value of type byte = " + Byte.MIN_VALUE);
+        System.out.println("The largest value of type short = " + Short.MAX_VALUE);
+        System.out.println("The smallest value of type short = " + Short.MIN_VALUE);
+        System.out.println("The largest value of type char = " + Character.MAX_VALUE);
+        System.out.println("The smallest value of type char = " + Character.MIN_VALUE);
+        System.out.println("The largest value of type int = " + Integer.MAX_VALUE);
+        System.out.println("The smallest value of type int = " + Integer.MIN_VALUE);
+        System.out.println("The largest value of type long = " + Long.MAX_VALUE);
+        System.out.println("The smallest value of type long = " + Long.MIN_VALUE);
+        System.out.println("The largest value of type float = " + Float.MAX_VALUE);
+        System.out.println("The smallest value of type float = " + Float.MIN_VALUE);
+        System.out.println("The largest value of type double = " + Double.MAX_VALUE);
+        System.out.println("The smallest value of type double = " + Double.MIN_VALUE);
     }
 }
