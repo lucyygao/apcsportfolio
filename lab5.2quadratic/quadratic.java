@@ -14,6 +14,7 @@
 
 import java.lang.Math;
 import chn.util.*;
+import apcslib.*;
 
 public class quadratic
 {
@@ -24,7 +25,7 @@ public class quadratic
         double ans1, ans2;
         
         // get input
-        System.out.println("The format of the equation is ax^2 + bx + c = 0.");
+        System.out.println("\u000C\nThe format of the equation is ax^2 + bx + c = 0.");
         System.out.println("Please enter the value of 'a': ");
         first = keyboard.readDouble();
         System.out.println("Please enter the value of 'b': ");
@@ -33,10 +34,11 @@ public class quadratic
         third = keyboard.readDouble();
         
         // solve
-        ans1 = ((-(sec) + Math.sqrt((sec*sec) - 4*first*third))/(2*first));
-        ans2 = ((-(sec) - Math.sqrt((sec*sec) - 4*first*third))/(2*first));
+        ans1 = ((-sec - Math.sqrt((sec*sec) - 4*first*third))/(2*first));
+        ans2 = ((-sec + Math.sqrt((sec*sec) - 4*first*third))/(2*first));
         
         // print formatted + limited output
+        System.out.println("\nCalculated results: x = " + (Format.left(ans1, 5, 4)) + ", " + (Format.left(ans2, 5, 4)));
     }
     
 }
